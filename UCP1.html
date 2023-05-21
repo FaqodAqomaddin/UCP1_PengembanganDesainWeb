@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pengembangan Desain Web</title>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+  <script>
+    function updateClock() {
+      var now = new Date();
+
+      var hari = now.toLocaleDateString('id-ID', { weekday: 'long' });
+
+      var tanggal = now.getDate();
+
+      var jam = now.getHours();
+      var menit = now.getMinutes();
+      var detik = now.getSeconds();
+
+      var hariTanggalJam = hari + ', ' + tanggal + ' ' + new Intl.DateTimeFormat('id-ID', { month: 'long' }).format(now) + ' ' + now.getFullYear() + ' ' + jam + ':' + menit + ':' + detik;
+
+      document.getElementById('hari-tanggal-jam').innerHTML = hariTanggalJam;
+    }
+
+    setInterval(updateClock, 1000);
+  </script>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#">A Day In My Life</a></li>
+          <li><a href="#">Yesterday</a></li>
+          <li><a href="#">Calender</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>      
+  <div class="container">
+    <h1></h1>
+    <div id="hari-tanggal-jam"></div>
+        <h1>Selamat Pagi Faqod</h1>
+        <div class="widget">
+          <img src="onepiece.jpg" alt="onepiece">
+        </div>
+        <div class="widget1">
+          <img src="fifa.jpg" alt="fifa23">
+          <img src="dragonnest.jpg" alt="dragonnest">
+          <img src="emyu.jpg" alt="emyu">
+        </div>
+  </div>
+</body>
+</html>

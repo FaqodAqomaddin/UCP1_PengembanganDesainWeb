@@ -1,0 +1,59 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+}
+.widget {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .widget1 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .widget1 img {
+    width: 250px;
+    height: 300px;
+  }
+
+  img {
+    width: 750px;
+    height: 300px;
+  }
+
+  nav {
+    background-color: #f1f1f1;
+    overflow: auto;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    float: left;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  nav ul li a:hover {
+    background-color: #ccc;
+    color: #fff;
+  }
+  #hari-tanggal-jam {
+    float:right;
+  }
